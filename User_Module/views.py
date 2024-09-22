@@ -12,7 +12,7 @@ class LoginAPIView(APIView):
     """
     The Login API view to log in users with username and password
     """
-    def get(self, request: HttpRequest, *args, **kwargs):
+    def post(self, request: HttpRequest, *args, **kwargs):
         """
         This method performs user login.
         param: request: HttpRequest
